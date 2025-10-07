@@ -21,6 +21,29 @@ const sqr9= document.getElementById("sqr-9");
 
 
 
+let gameStore =[
+    "","","","","","","","",""
+];
+
+let currentPlayer= "X";
+
+
+
+cell.addEventListener("click",function(){
+
+    let playerIndex1 ="X";
+    let playerIndex2 ="O";
+
+    if (sqr1 ==="" || sqr2==="" ||sqr3==="" ||sqr4==="" ||sqr5===""
+        || sqr6==="" || sqr7=== "" || sqr8==="" || sqr9==="" ){
+
+
+
+    }
+})
+
+
+
 startButton.addEventListener("click", function(){
 
     gameBoard.style.display ="grid";

@@ -1,6 +1,6 @@
 const all= document.querySelector(".container");
 const gameBoard= document.getElementById("gameboard");
-const cell = document.querySelectorAll(".cell");
+const cells = document.querySelectorAll(".cell");
 const control= document.getElementById("controls");
 const player1= document. getElementById("player1");
 const player2= document.getElementById("player2");
@@ -28,21 +28,25 @@ let gameStore =[
 let currentPlayer= "X";
 
 
-
+cells.forEach((cell,index) => {
+    
 cell.addEventListener("click",function(){
+    if ( gameStore[index]===""){
+cell.textContent= currentPlayer;
 
-    let playerIndex1 ="X";
-    let playerIndex2 ="O";
+gameStore[index]=currentPlayer;
 
-    if (sqr1 ==="" || sqr2==="" ||sqr3==="" ||sqr4==="" ||sqr5===""
-        || sqr6==="" || sqr7=== "" || sqr8==="" || sqr9==="" ){
-
+if (currentPlayer === "X") {
+  currentPlayer = "O";
+} else {
+  currentPlayer = "X";
+}
 
 
     }
 })
 
-
+});
 
 startButton.addEventListener("click", function(){
 

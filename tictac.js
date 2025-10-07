@@ -45,12 +45,16 @@ if (currentPlayer === "X") {
 
     }
 })
-
 });
 
 startButton.addEventListener("click", function(){
 
-    gameBoard.style.display ="grid";
+    if (player1.value === "" || player2.value === "") {
+    message.textContent = "Please enter both player names before starting.";
+  } else {
+    gameBoard.style.display = "grid";
+    message.textContent = `${player1.value} (X) vs ${player2.value} (O)`;
+  }
 });
 
 
@@ -59,5 +63,7 @@ restartButton.addEventListener("click",function(){
 
       gameStore = ["","","","","","","","",""];
       cells.forEach(cell => cell.textContent = "");
+      message.textContent="";
       currentPlayer="X";
 })
+

@@ -47,5 +47,10 @@ button{
     border-radius: 10px;
     color: white;
     font-weight: bold;
+    font-size: 2rem;          
+    display: flex;            
+    align-items: center;      
+    justify-content: center;  
+    cursor: pointer;   
    
 }

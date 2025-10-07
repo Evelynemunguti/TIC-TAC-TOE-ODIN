@@ -52,3 +52,12 @@ startButton.addEventListener("click", function(){
 
     gameBoard.style.display ="grid";
 });
+
+
+
+restartButton.addEventListener("click",function(){
+
+      gameStore = ["","","","","","","","",""];
+      cells.forEach(cell => cell.textContent = "");
+      currentPlayer="X";
+})

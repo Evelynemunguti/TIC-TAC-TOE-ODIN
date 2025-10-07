@@ -40,10 +40,11 @@ button{
     margin-bottom: 15px;
 }
 .cell{
-    display: none; 
+     display: none;  
     background-color: rgb(138, 5, 5);
     border-style: none;
     border-radius: 10px;
     color: white;
     font-weight: bold;
+   
 }

@@ -33,14 +33,15 @@ button{
 }
 
 #gameboard{
-    display: grid;
+    display: none; 
+    /* display: grid; */
     grid-template-columns: repeat(3, 70px);
     grid-template-rows: repeat(3, 70px);
     gap:3px;
     margin-bottom: 15px;
 }
 .cell{
-     display: none;  
+      
     background-color: rgb(138, 5, 5);
     border-style: none;
     border-radius: 10px;

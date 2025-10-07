@@ -19,3 +19,9 @@ const sqr7= document.getElementById("sqr-7");
 const sqr8= document.getElementById("sqr-8");
 const sqr9= document.getElementById("sqr-9");
 
+
+
+startButton.addEventListener("click", function(){
+
+    gameBoard.style.display ="grid";
+});
